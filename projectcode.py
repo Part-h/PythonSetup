@@ -19,15 +19,15 @@ class mainproject(QtWidgets.QMainWindow):                      #inheriting class
          #file_name=str(datetime.datetime.now())
          
          try:
-             currentDate = self.currentDate.selectedDate().toString("yyyy-MM-dd")
-             vaccinationDate = (self.vaccineDate.selectedDate().toString("yyyy-MM-dd"))
+            #  currentDate = self.currentDate.selectedDate().toString("yyyy-MM-dd")
+            #  vaccinationDate = (self.vaccineDate.selectedDate().toString("yyyy-MM-dd"))
              
-             print(currentDate,vaccinationDate)
-             mdate1 = datetime.datetime.strptime(vaccinationDate, "%Y-%m-%d").date()                    #parse a string according to format of time 
-             rdate1 = datetime.datetime.strptime(currentDate, "%Y-%m-%d").date()
-             delta =  (mdate1 - rdate1).days
-             self.label.setText(str(delta))
-             print(delta)
+            #  print(currentDate,vaccinationDate)
+            #  mdate1 = datetime.datetime.strptime(vaccinationDate, "%Y-%m-%d").date()                    #parse a string according to format of time 
+            #  rdate1 = datetime.datetime.strptime(currentDate, "%Y-%m-%d").date()
+            #  delta =  (mdate1 - rdate1).days
+            #  self.label.setText(str(delta))
+             print('delta')
          except Exception as e:
              print(e)
 import sys
